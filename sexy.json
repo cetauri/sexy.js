@@ -1,7 +1,8 @@
 {
-    "suffix" : "cetauri",
+    "suffix" : "_cetauri",
     "npm" : [],
-    "lib": [
+    "libPath" : "node/lib/",
+    "libs": [
         "_debugger.js",
         "_http_agent.js",
         "_http_client.js",
@@ -38,7 +39,6 @@
         "os.js",
         "path.js",
         "punycode.js",
-        // "querystring.js",
         "readline.js",
         "repl.js",
         "smalloc.js",
