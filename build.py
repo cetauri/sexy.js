@@ -35,7 +35,7 @@ def main():
 
     suffix = globalConfig["suffix"]
     libPath = globalConfig["libPath"]
-    libs = globalConfig["libs"] #os.listdir(libPath)
+    libs = globalConfig["libs"]
     for f in libs:
     #     # print(f)
     #     # with open(prefix + f) as content_file:
@@ -49,8 +49,12 @@ def main():
         target = libPath + splitext[0] + suffix + splitext[1]
 
         shutil.move(source, target)
-        print("move file : "+ target)
+        print(f +" move "+ target)
 
+
+    # node.gyp 변경
+
+    # source 내용 변경
 
 if __name__ == '__main__':
     main()
