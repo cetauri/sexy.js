@@ -65,28 +65,31 @@ def main():
 
     libList = list(old_gyp)[start:end-4]
     libText = "".join(libList).split("\n")
-    print(  libText )
+    # print(  libText )
 
     new_gyp = ""
+    delimiter = "'lib/"
+
     for line in libText:
         # print (line)
-        if line.__contains__("'lib/"):
-            start = line.rfind("''lib/")
-            end = line.find("',", start)
+        if line.__contains__(delimiter):
+            s = line.find(delimiter)
+            e = line.find("',", s)
 
-            func = list(line)[start + 7:end]
+            func = list(line)[s + len(delimiter):e]
+            func = "".join(func)
+            func = os.path.splitext(func)
 
-            new_gyp += ("\t'lib/" + "".join(func) + "',\n")
-
-            # print("".join(func))
-        #     new_gyp += "".join(func)
-
-
+            new_gyp += ("      'lib/" + func[0] + suffix + func[1] + "',\n")
         else:
             new_gyp += line +"\n"
 
-    print("".join(new_gyp))
+    # print("".join(new_gyp))
 
+    gypList = list(old_gyp)
+    print( "".join(gypList[0:start]) )
+    print( "".join(new_gyp)+"," )
+    print( "".join(gypList[end:]))
     # source 내용 변경
 
 if __name__ == '__main__':
