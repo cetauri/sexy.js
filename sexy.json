@@ -12,6 +12,13 @@
         "path" : "node/src/node_version.h",
         "version_string" : "#define NODE_VERSION \"v\" NODE_VERSION_STRING"
     },
+    "global" : {
+        "path" : "node/src/node.js",
+        "list" : [
+            "__filename",
+            "__dirname"
+        ]
+    },
     "libs": [
         "_debugger.js",
         "_http_agent.js",
