@@ -67,6 +67,7 @@
         "url.js",
         "util.js",
         "vm.js",
+        "querystring.js",
         "zlib.js"
     ]
 }

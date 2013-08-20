@@ -1,5 +1,3 @@
-import os
-for root, dirs, files in os.walk("/usr/local"):
-    print(root)
-    print(dirs)
-    print(files)
+import re
+aa = re.sub("(([0-9])\\.)", "(\\1)", "3. apple 5. 4apple")
+print(aa)
