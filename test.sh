@@ -1,3 +1,5 @@
+#!/bin/sh
+
 cd node
 git reset --hard HEAD
 cd ..
