@@ -8,6 +8,7 @@ cd ..
 python3 build.py
 cd node
 
+./configure
 make
 ./node test.js
 ./node -v
