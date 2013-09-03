@@ -1,5 +1,8 @@
 #!/bin/sh
 
+git submodule init
+git submodule update
+
 cd node
 git reset --hard HEAD
 cd ..
@@ -10,7 +13,14 @@ cd node
 
 ./configure
 make
-./node test.js
-./node -v
-./node
+
 cd ..
+
+cp node/out/Release/node sexy
+
+./sexy test.js
+./sexy -v
+./sexy
+
+
+sudo ./sexy /usr/local/bin
