@@ -23,4 +23,4 @@ cp node/out/Release/node sexy
 ./sexy
 
 
-sudo ./sexy /usr/local/bin
+sudo cp ./sexy /usr/local/bin
