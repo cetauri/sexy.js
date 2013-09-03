@@ -1,5 +1,5 @@
-# sexy.js
-=======
+# Sexy.js
+
 You are so sexy!!
 
 ## Prerequisites
