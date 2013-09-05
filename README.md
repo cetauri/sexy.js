@@ -7,6 +7,7 @@ You are so sexy!!
 - Git
 - Python 3 
 - GCC(GNU Compiler Collection), G++
+- npm (Node Packaged Modules) - https://github.com/isaacs/npm
 
 ## Build
 ```shell
