@@ -8,7 +8,7 @@
         "suffix" : "},"
     },
     "sexy" : {
-        "version" : "0.0.4",
+        "version" : "0.0.5",
         "path" : "node/src/node_version.h",
         "version_string" : "#define NODE_VERSION \"v\" NODE_VERSION_STRING"
     },
@@ -72,6 +72,7 @@
     "node_modules": [
         "express",
         "usergrid",
-        "nconf"
+        "nconf",
+        "forever"
     ]
 }
