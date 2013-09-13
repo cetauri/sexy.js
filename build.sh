@@ -5,6 +5,7 @@ git submodule update
 
 cd node
 git reset --hard HEAD
+git checkout origin/v0.10.18-release
 cd ..
 
 
@@ -18,8 +19,8 @@ cd ..
 
 cp node/out/Release/node sexy
 
-# ./sexy test.js
-# ./sexy -v
+./sexy test.js
+./sexy -v
 # ./sexy
 
 
