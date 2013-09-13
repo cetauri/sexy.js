@@ -18,9 +18,9 @@ cd ..
 
 cp node/out/Release/node sexy
 
-./sexy test.js
-./sexy -v
-./sexy
+# ./sexy test.js
+# ./sexy -v
+# ./sexy
 
 
-sudo cp ./sexy /usr/local/bin
+# cp ./sexy /usr/local/bin
