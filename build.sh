@@ -5,7 +5,9 @@ git submodule update
 
 cd node
 git reset --hard HEAD
-git checkout origin/v0.10.18-release
+git checkout -b v0.10.18 -t origin/v0.10.18-release
+git checkout v0.10.18
+
 cd ..
 
 
