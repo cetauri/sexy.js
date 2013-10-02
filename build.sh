@@ -1,13 +1,18 @@
 #!/bin/sh
+export SEXY_NODE_VERSION="v0.10.18"
 
 git submodule init
 git submodule update
 
 cd node
 git reset --hard HEAD
-git checkout origin/v0.10.18-release
-cd ..
+git checkout master
 
+git branch -D $SEXY_NODE_VERSION
+git checkout -b $SEXY_NODE_VERSION -t origin/$SEXY_NODE_VERSION-release
+git checkout $SEXY_NODE_VERSION
+
+cd ..
 
 python3 build.py
 cd node
