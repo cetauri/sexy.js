@@ -5,8 +5,9 @@ You are so sexy!!
 ## Prerequisites
 
 - Git
-- Python 3 
-- GCC(GNU Compiler Collection), G++
+- Python 2.7 and Python 3 
+- Node,js v0.10.18
+- Make, GCC(GNU Compiler Collection), G++
 - npm (Node Packaged Modules) - https://github.com/isaacs/npm
 
 ## Build
@@ -17,7 +18,10 @@ You are so sexy!!
 ## Check
 ```shell
 # sexy -v
-
-v0.11.6-pre
-Sexy.js v0.0.1(build. 2013-09-02 10:45:46.185055)
+v0.10.18
+Sexy.js v0.1.0 (build. 2013-09-30 10:39:45.163333)
 ```
+
+## Node modules obfuscation
+```shell
+ex) ./sexyObfuscate.sh /data/sputnik
