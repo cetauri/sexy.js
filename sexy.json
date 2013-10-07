@@ -73,6 +73,7 @@
         "express",
         "usergrid",
         "nconf",
-        "forever"
+        "forever",
+        "baasio"
     ]
 }
