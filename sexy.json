@@ -71,9 +71,7 @@
     ],
     "node_modules": [
         "express",
-        "usergrid",
         "nconf",
-        "forever",
         "baasio"
     ]
 }
