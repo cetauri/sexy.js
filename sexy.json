@@ -67,11 +67,13 @@
         "util",
         "vm",
         "querystring",
-        "zlib"
+        "zlib",
+        "request"
     ],
     "node_modules": [
         "express",
         "nconf",
-        "baasio"
+        "baasio",
+        "request"
     ]
 }
