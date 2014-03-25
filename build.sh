@@ -1,5 +1,5 @@
 #!/bin/sh
-export SEXY_NODE_VERSION="v0.10.18"
+export SEXY_NODE_VERSION="v0.10.26"
 
 git submodule init
 git submodule update
